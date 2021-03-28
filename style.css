@@ -1,0 +1,496 @@
+@font-face {
+  font-family: 'Avenir Roman';
+  src: url('img/avenir-lt-55-roman.ttf') format('truetype');
+}
+
+/* Reset all Margins & Padding */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Common Style */
+
+body {
+  font-family: 'Avenir Roman', sans-serif;
+  color: #f9f9f9;
+  background-color: #040714;
+  overflow-x: hidden;
+}
+
+span {
+  display: block;
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 53px;
+  font-style: normal;
+  margin: 20px 0 30px 0;
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 50px;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0 0 24px;
+}
+
+h3 {
+  display: block;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+a {
+  color: #f9f9f9;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px 16px;
+}
+
+.subtitles-section {
+  color: rgba(192, 192, 192, 0.8);
+  font-size: 20px;
+  margin: 0 0 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/* Nav Section */
+
+.commom-nav,
+.initial-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: #090b13;
+  z-index: 1;
+  align-items: center;
+  display: flex;
+  padding: 0 36px;
+  opacity: 0;
+  font-size: 15px;
+  transform: translateZ(0);
+  transition: opacity 0.5s ease-out;
+  pointer-events: none;
+  letter-spacing: 16px;
+}
+
+.logo-nav {
+  width: 80px;
+}
+
+.logo-nav a {
+  margin: 0;
+}
+
+.options-nav {
+  margin-left: auto;
+}
+
+.options-nav a {
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+
+.options-nav a:first-child {
+  background-color: #0063e5;
+  border: 1px solid transparent;
+  margin-right: 22px;
+}
+
+.options-nav a:first-child:hover {
+  background: #0483ee;
+}
+
+.options-nav a:last-child {
+  border: 1px solid transparent;
+}
+
+.options-nav a:last-child:hover {
+  background-color: #f9f9f9;
+  color: #090b13;
+}
+
+.initial-nav {
+  z-index: 3;
+  background-color: transparent;
+  opacity: 1;
+  pointer-events: auto;
+  flex-direction: row-reverse;
+}
+
+.initial-nav a {
+  border-radius: 4px;
+  letter-spacing: 1px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.initial-nav a:hover {
+  color: #000;
+  background-color: #f9f9f9;
+}
+
+/*Apply styles after scroll*/
+.scrolling-active {
+  opacity: 1;
+}
+
+/* Hero Section */
+
+.disney-logo {
+  max-width: 160px;
+}
+
+.hero-section {
+  background: url('img/bg-disneyplus.jpg') no-repeat top center;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 80px;
+}
+
+.hero-container {
+  padding: 80px 0 0 0;
+}
+.plans-container {
+  display: flex;
+  width: 680px;
+  max-width: 100%;
+}
+
+.plan {
+  width: 300px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+.plan-span {
+  font-weight: 400;
+  display: inline;
+  font-size: 14px;
+  color: hsla(0, 0%, 75.3%, 0.8);
+}
+
+.plan a {
+  background: #0063e5;
+  text-align: center;
+  font-size: 18px;
+  display: block;
+  border-radius: 4px;
+  padding: 16.5px 14px;
+  letter-spacing: 0.8px;
+  width: 324px;
+  width: 100%;
+  transition: 0.2s ease;
+}
+
+.plan a:hover {
+  background: #0483ee;
+}
+
+.plan + .plan {
+  margin-left: 32px;
+}
+
+.subtitle-plans {
+  font-size: 12px;
+  line-height: 18px;
+  margin: 24px 0;
+  color: hsla(0, 0%, 75.3%, 0.8);
+}
+
+.logo-footer-hero-section img {
+  max-width: 600px;
+  position: absolute;
+  bottom: 15px;
+}
+
+/* Watch Your Way Section */
+
+.watch-section {
+  padding: 80px;
+  margin-top: -160px;
+}
+
+.watch-container {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+}
+
+.description-watch,
+.img-watch {
+  width: 50%;
+  padding: 0 4% 0 0;
+}
+
+.img-watch img {
+  width: 110%;
+}
+
+/* Movies Section*/
+.movies-section {
+  padding: 80px;
+}
+
+.movies-grid {
+  margin: 0 -12px;
+}
+
+.row-movies-grid {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 4px;
+}
+
+.column {
+  flex: 1;
+  width: 33.33%;
+  padding: 12px;
+}
+
+.column img {
+  vertical-align: middle;
+  width: 100%;
+  padding: 12px;
+  border-radius: 16px;
+}
+
+/* Subscription Section */
+
+.subscription-section {
+  padding: 80px;
+}
+
+.subscription-wrap {
+  text-align: center;
+}
+.subscription-section a {
+  min-width: 360px;
+  background-color: #0063e5;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 16.5px 14px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+/* Lion King Section */
+
+.lion-king-section {
+  padding: 80px;
+}
+.lion-king-container {
+  position: relative;
+}
+
+.lion-king-description {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  left: 52%;
+  transform: translateY(-50%);
+}
+.lion-king-section img {
+  display: block;
+  width: 100%;
+}
+
+/* Available Devices Section */
+
+.available-devices-section {
+  padding: 80px;
+}
+.devices-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+.card {
+  text-align: center;
+  flex: 1;
+  width: 25%;
+}
+.title-card {
+  font-size: 22px;
+  margin: 24px 0 24px 0;
+}
+.txt-card p {
+  margin-bottom: 4px;
+}
+.img-card img {
+  display: inline-block;
+  width: 100%;
+}
+
+/* Footer */
+
+footer {
+  padding: 26px 8px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-footer {
+  width: 80px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.links-footer {
+  margin: 0 0 24px;
+}
+
+.subtitles-section a {
+  text-transform: none;
+  color: rgba(192, 192, 192, 0.8);
+  padding: 8px 10px;
+}
+
+.subtitles-footer {
+  font-size: 12px;
+  text-align: center;
+  max-width: 1024px;
+  line-height: 18px;
+  margin: 0 0 24px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 24px;
+    margin: 0;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .subtitles-section p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  span {
+    display: inline;
+  }
+  /*Hero Section*/
+  .disney-logo-container {
+    align-items: center;
+  }
+  .hero-section {
+    padding: 30px;
+    min-height: 70vh;
+    background: url('img/bg-disneyplus-version2.jpg') no-repeat top center;
+    background-size: contain;
+  }
+  .hero-container {
+    text-align: center;
+  }
+  .plans-container {
+    display: inline;
+  }
+
+  .plan {
+    width: auto;
+  }
+
+  .plan + .plan {
+    margin-left: 0;
+  }
+
+  .logo-footer-hero-section img {
+    display: none;
+  }
+
+  /*Watch Section*/
+  .watch-section {
+    padding: 30px;
+    margin-top: -10px;
+  }
+  .watch-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .description-watch,
+  .img-watch {
+    width: 100%;
+    text-align: center;
+  }
+
+  /*Movies Section*/
+  .movies-section {
+    padding: 30px;
+    margin-top: -40px;
+  }
+
+  .column {
+    width: 100%;
+    padding: 0;
+  }
+
+  .column img {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .row-movies-grid {
+    flex-direction: column;
+  }
+
+  /*Lion King Section*/
+  .lion-king-section {
+    padding: 30px;
+    margin-bottom: 40px;
+  }
+  .lion-king-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .lion-king-description {
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  /*subscription section*/
+  .subscription-section {
+    padding: 30px;
+  }
+
+  .subscription-section a {
+    min-width: 200px;
+  }
+
+  /*available-devices-section*/
+
+  .available-devices-section {
+    padding: 30px;
+  }
+  .card {
+    flex: auto;
+    width: 50%;
+  }
+
+  /*footer */
+  p.subtitles-section,
+  a.subscription-section {
+    font-size: 12px;
+  }
+}
